@@ -1,0 +1,21 @@
+{
+  "name": "wenprise/block-modules",
+  "description": "WordPress Post Query Block",
+  "require": {
+    "php": ">=7.1.13",
+    "wenprise/template-render": "^1.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "WenpriseBlocksModules\\": "src/"
+    }
+  },
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Amos Lee",
+      "email": "amos@wpcio.com"
+    }
+  ],
+  "minimum-stability": "stable"
+}

@@ -1,0 +1,58 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
+        "This file is @generated automatically"
+    ],
+    "content-hash": "97cc2dd273eeca12ff941e273c65a075",
+    "packages": [
+        {
+            "name": "wenprise/template-render",
+            "version": "1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/iwillhappy1314/wenprise-template-render.git",
+                "reference": "cb08834a735808eaaa75f384bb34611406a97d2d"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/iwillhappy1314/wenprise-template-render/zipball/cb08834a735808eaaa75f384bb34611406a97d2d",
+                "reference": "cb08834a735808eaaa75f384bb34611406a97d2d",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.6"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": [],
+                "files": [
+                    "src/loader.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Amos Lee",
+                    "email": "iwillhappy1314@gmail.com"
+                }
+            ],
+            "description": "Allow WordPress plugin user to overwrite plugin templates in themes",
+            "time": "2018-01-06T11:42:08+00:00"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "stable",
+    "stability-flags": [],
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": {
+        "php": ">=7.1.13"
+    },
+    "platform-dev": [],
+    "plugin-api-version": "1.1.0"
+}

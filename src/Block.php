@@ -41,7 +41,7 @@ class Block
      * @param array  $options
      * @param string $template
      */
-    public function __construct($query_args = [], $options = [], $template = '')
+    public function __construct(array $query_args = [], array $options = [], string $template = '')
     {
         $this->set_query($query_args);
         $this->set_options($options);
@@ -56,7 +56,7 @@ class Block
      *
      * @return $this
      */
-    public function set_query(array $query_args)
+    public function set_query(array $query_args): Block
     {
         $this->query_args = $query_args;
         $this->wp_query   = new \WP_Query($this->query_args);
@@ -72,7 +72,7 @@ class Block
      *
      * @return $this
      */
-    public function set_options(array $options)
+    public function set_options(array $options): Block
     {
         $this->options = $options;
 
@@ -87,7 +87,7 @@ class Block
      *
      * @return $this
      */
-    public function set_template($template)
+    public function set_template($template): Block
     {
         $this->template = $template;
 
@@ -98,9 +98,9 @@ class Block
     /**
      * 获取 WP_Query 查询
      *
-     * @return object
+     * @return object \WP_Query
      */
-    public function get_query()
+    public function get_query(): object
     {
         return $this->wp_query;
     }
@@ -127,7 +127,7 @@ class Block
     /**
      * 渲染模块
      */
-    public function render()
+    public function render(): string
     {
         $index = 0;
         $html  = '';
